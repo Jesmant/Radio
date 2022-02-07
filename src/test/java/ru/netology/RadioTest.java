@@ -1,10 +1,13 @@
 package ru.netology;
+
 import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class RadioTest {
 
-    @Test // Установка текущей станции
+    @Test
+        // Установка текущей станции
     void shouldRadio1() {
         Radio radio1 = new Radio();
         radio1.setCurrentStation(11);
@@ -13,6 +16,7 @@ public class RadioTest {
         assertEquals(expected, actual);
         System.out.println("станция № " + radio1.getCurrentStation());
     }
+
     @Test
     void shouldRadio11() {
         Radio radio1 = new Radio();
@@ -24,7 +28,8 @@ public class RadioTest {
         System.out.println("станция № " + radio1.getCurrentStation());
     }
 
-    @Test //Увеличение Текущей станции
+    @Test
+        //Увеличение Текущей станции
     void setNext() {
         Radio radio2 = new Radio();
         radio2.setCurrentStation(9);
@@ -34,6 +39,7 @@ public class RadioTest {
         assertEquals(expected, actual);
         System.out.println("станция № " + radio2.getCurrentStation());
     }
+
     @Test
     void setNext1() {
         Radio radio2 = new Radio();
@@ -44,6 +50,7 @@ public class RadioTest {
         assertEquals(expected, actual);
         System.out.println("станция № " + radio2.getCurrentStation());
     }
+
     @Test
     void setNext11() {
         Radio radio2 = new Radio();
@@ -54,6 +61,7 @@ public class RadioTest {
         assertEquals(expected, actual);
         System.out.println("станция № " + radio2.getCurrentStation());
     }
+
     @Test
     void setNext2() {
         Radio radio2 = new Radio();
@@ -64,6 +72,7 @@ public class RadioTest {
         assertEquals(expected, actual);
         System.out.println("станция № " + radio2.getCurrentStation());
     }
+
     @Test
     void setNext3() {
         Radio radio2 = new Radio();
@@ -75,7 +84,8 @@ public class RadioTest {
         System.out.println("станция № " + radio2.getCurrentStation());
     }
 
-    @Test  // Уменьшение текущей станции
+    @Test
+        // Уменьшение текущей станции
     void setPrev() {
         Radio radio3 = new Radio();
         radio3.setCurrentStation(0);
@@ -85,6 +95,7 @@ public class RadioTest {
         assertEquals(expected, actual);
         System.out.println("станция № " + radio3.getCurrentStation());
     }
+
     @Test
     void setPrev1() {
         Radio radio3 = new Radio();
@@ -96,7 +107,8 @@ public class RadioTest {
         System.out.println("станция № " + radio3.getCurrentStation());
     }
 
-    @Test // Увеличение громкости
+    @Test
+        // Увеличение громкости
     void increaseVolume() {
         Radio radio4 = new Radio();
         radio4.setCurrentVolume(10);
@@ -106,6 +118,7 @@ public class RadioTest {
         assertEquals(expectedV, actualV);
         System.out.println("громкость " + radio4.getCurrentVolume());
     }
+
     @Test
     void increaseVolume1() {
         Radio radio4 = new Radio();
@@ -117,7 +130,8 @@ public class RadioTest {
         System.out.println("громкость " + radio4.getCurrentVolume());
     }
 
-    @Test //Уменьшение громкости
+    @Test
+        //Уменьшение громкости
     void decreaseVolume() {
         Radio radio5 = new Radio();
         radio5.setCurrentVolume(0);
@@ -127,6 +141,7 @@ public class RadioTest {
         assertEquals(expectedV, actualV);
         System.out.println("громкость " + radio5.getCurrentVolume());
     }
+
     @Test
     void decreaseVolume1() {
         Radio radio5 = new Radio();
